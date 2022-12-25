@@ -1,0 +1,83 @@
+<div class="container-fluid p-3 mt-2 page h-100">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center text-dark m-2">Ajouter un Patient</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <section class="forms"> 
+                <div class="container-fluid mt-3">
+                  <div class="row d-flex justify-content-center">
+                   
+                    <div class=" col-md-offset-3 col-md-6 align-self-center">
+                      <div class="card">
+            
+                        <div class="card-body">
+                          <p class="text-sm">Ajouter un nouveau patient</p>
+                          <form id="contactForm" data-sb-form-api-token="API_TOKEN" #f="ngForm" (submit)="onSubmit(f)" novalidate>
+                            <div class="mb-3">
+                              <label class="form-label" for="note">Nom</label>
+                              <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="nom" data-sb-validations="required" ngModel name="nom" #nom="ngModel" >
+                              <div class="form-text" id="noteHelp">nom</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">Prenom</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="prenom" data-sb-validations="required" ngModel name="prenom" #prenom="ngModel" >
+                                <div class="form-text" id="noteHelp">Prenom</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">Email</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="email" data-sb-validations="required" ngModel name="email" #email="ngModel" >
+                                <div class="form-text" id="noteHelp">Email</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">Telephone</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="telephone" data-sb-validations="required" ngModel name="telephone" #telephone="ngModel" >
+                                <div class="form-text" id="noteHelp">telephone</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">date de naissance</label>
+                                <input class="form-control" id="note" type="date" aria-describedby="noteHelp" placeholder="date de naissance" data-sb-validations="required" ngModel name="date_naissance" #date_naissance="ngModel" >
+                                <div class="form-text" id="noteHelp">date de naissance</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">Temperature</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="temperature" data-sb-validations="required" ngModel name="temperature" #temperature="ngModel" >
+                                <div class="form-text" id="noteHelp">Temperature</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">poids</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="Poids" data-sb-validations="required" ngModel name="poids" #poids="ngModel" >
+                                <div class="form-text" id="noteHelp">poids</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">saturation</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="Saturation" data-sb-validations="required" ngModel name="saturation" #saturation="ngModel" >
+                                <div class="form-text" id="noteHelp">saturation</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">battement de coeur</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="battementcoeur" data-sb-validations="required" ngModel name="battementcoeur" #battementcoeur="ngModel" >
+                                <div class="form-text" id="noteHelp">battement de coeur</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="note">Taille</label>
+                                <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="Taille" data-sb-validations="required" ngModel name="taille" #taille="ngModel" >
+                                <div class="form-text" id="noteHelp">Taille</div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Ajouter</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                   
+                   
+                  
+                  </div>
+                </div>
+              </section>
+              
+        </div>
+    </div>
+</div>

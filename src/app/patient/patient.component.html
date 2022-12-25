@@ -1,0 +1,45 @@
+<div class="container-fluid p-3 mt-2 page h-100">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-dark m-2">Liste des patients</h1>
+      </div>
+    </div>
+    <table class="table m-2">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nom et prenom</th>
+                <th>telephone</th>
+                <th>date de naissance</th>
+                <th>poids</th>
+                <th>temperature</th>
+                <th>battement de coeur</th>
+                <th>saturation</th>
+                <th>taille</th>
+                <th>Profile</th>
+                <th>Ajouter Consultation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of patientData" >
+                <td>{{patient.patient.id}}</td>
+                <td>{{patient.patient.prenom}} {{patient.patient.nom}} </td>
+                <td>{{patient.patient.telephone}}</td>
+                <td>{{patient.patient.date_naissance}} </td>
+                <td>{{patient.poids}} </td>
+                <td>{{patient.temperature }} </td>
+                <td>{{patient.battementcoeur }} </td>
+                <td>{{patient.saturation }} </td>
+                <td>{{patient.taille }} </td>
+                <td>
+                  <a href="http://localhost:4200/" target="_blank">Profile</a>
+                </td>
+                <td>
+                    <a routerLink="/consultation" class="btn btn-green">Ajouter Consultation</a>
+                </td>
+              </tr>
+        
+        </tbody>
+      </table>
+      
+</div>

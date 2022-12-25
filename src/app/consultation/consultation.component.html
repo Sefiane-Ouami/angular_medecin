@@ -1,0 +1,42 @@
+<div class="container-fluid p-3 mt-2 page h-100">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center text-dark m-2">Ajouter Consultation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <section class="forms"> 
+                <div class="container-fluid mt-3">
+                  <div class="row d-flex justify-content-center">
+                   
+                    <div class=" col-md-offset-3 col-md-6 align-self-center">
+                      <div class="card">
+            
+                        <div class="card-body">
+                          <p class="text-sm">Ajouter des nouvelles consultations</p>
+                          <form id="contactForm" data-sb-form-api-token="API_TOKEN" #f="ngForm" (submit)="onSubmit(f)" novalidate>
+                            <div class="mb-3">
+                              <label class="form-label" for="note">Note</label>
+                              <input class="form-control" id="note" type="text" aria-describedby="noteHelp" placeholder="Note" data-sb-validations="required" ngModel name="note" #note="ngModel" >
+                              <div class="form-text" id="noteHelp">cette note nous aider dans le filtre</div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="rapport">Rapport</label>
+                              <input class="form-control" id="rapport"  class="form-control" id="rapport" accept=".pdf,.doc,.docx" (change)="onFileChange($event)" #fileUpload  type="file"  data-sb-validations="required" ngModel name="rapport" #rapport="ngModel" >
+                            </div>
+                            <button class="btn btn-primary" type="submit">Suivant</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                   
+                   
+                  
+                  </div>
+                </div>
+              </section>
+              
+        </div>
+    </div>
+</div>
